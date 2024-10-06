@@ -1,0 +1,31 @@
+strings:
+  inputs:
+    - Libarorent/Resources/Localization
+  outputs:
+    - templateName: structured-swift5
+      output: Libarorent/Resources/Localization/Strings.generated.swift
+      params:
+        enumName: Strings
+
+xcassets:
+  - inputs:
+    - Libarorent/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: Libarorent/Resources/Images/Images.generated.swift
+  - inputs:
+    - Libarorent/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Libarorent/Resources/Colors/Colors.generated.swift
+        params:
+          enumName: Colors
+          
+fonts:
+  - inputs: Libarorent/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: Libarorent/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
