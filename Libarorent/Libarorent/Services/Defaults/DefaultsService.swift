@@ -21,6 +21,21 @@ extension DefaultsService {
             standard.set(newValue.rawValue, forKey: Keys.flow.rawValue)
         }
     }
+    
+    static var categories: [CategoryModel] {
+        get {
+            guard let data = standard.object(forKey: Keys.categories.rawValue) as? Data else {
+                return []
+            }
+            let categories = try? JSONDecoder().decode([CategoryModel].self, from: data)
+            return categories ?? []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.setValue(data, forKey: Keys.categories.rawValue)
+            }
+        }
+    }
 }
 
 extension DefaultsService {
@@ -35,9 +50,6 @@ extension DefaultsService {
 extension DefaultsService {
     enum Keys: String {
         case flow
-        case user
-        case projects
-        case incomeExpenditure
-        case clients
+        case categories
     }
 }

@@ -9,16 +9,22 @@ import SwiftUI
 
 struct InputField: View {
     var title: String
+    var placeholder: String = "Napisz tekst"
     @Binding var text: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title)
-                .foregroundStyle(.white)
+                .foregroundStyle(.black)
+                .font(Fonts.KulimPark.semiBold.swiftUIFont(size: 15))
             
             TextField(text: $text) {
-                Text("wprowadź informacje")
+                Text(placeholder)
+                    .foregroundStyle(Colors.silver.swiftUIColor)
+                    .font(Fonts.KulimPark.light.swiftUIFont(size: 15))
             }
+            .foregroundStyle(.black)
+            .font(Fonts.KulimPark.semiBold.swiftUIFont(size: 15))
             .padding(.horizontal, 16)
             .padding(.vertical, 18)
             .background(.white)
@@ -27,16 +33,10 @@ struct InputField: View {
     }
 }
 
-extension InputField {
-    enum Style {
-        case text
-        case date
-    }
-}
-
 #Preview {
     ZStack {
-        InputField(title: "Imię Nazwisko", text: .constant(""))
+        Colors.silver.swiftUIColor
+        InputField(title: "Nazwa towaru", text: .constant(""))
             .padding(.horizontal)
     }
 }

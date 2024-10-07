@@ -13,14 +13,14 @@ struct RootContentView: View {
     var body: some View {
         Group {
             if viewModel.showPreloader {
-                Text("PreloaderView")
+                PreloaderView()
             } else {
                 switch viewModel.viewState {
                 case .onboarding:
-                    Text("OnboardingViewTabView")
+                    OnboardingViewTabView()
                         .environmentObject(viewModel)
                 case .main:
-                    Text("TabBar()")
+                    TabBar()
                         .environmentObject(viewModel)
                 }
             }
