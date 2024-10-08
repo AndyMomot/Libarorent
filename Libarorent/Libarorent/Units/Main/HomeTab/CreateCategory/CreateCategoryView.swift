@@ -94,6 +94,8 @@ struct CreateCategoryView: View {
                         .opacity(viewModel.isValidFields ? 1 : 0.5)
                     }
                     .padding(.bottom)
+                    
+                    Spacer(minLength: bounds.height * 0.2)
                 }
                 .scrollIndicators(.never)
                 .padding(.horizontal, 44)
@@ -102,6 +104,7 @@ struct CreateCategoryView: View {
             }
             .ignoresSafeArea(edges: .bottom)
         }
+        .hideKeyboardWhenTappedAround()
         .sheet(isPresented: $viewModel.showImagePicker) {
             ImagePicker(selectedImage: $viewModel.image)
         }

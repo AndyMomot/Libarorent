@@ -13,6 +13,14 @@
 		4716CFDC2CB552C60092DD3F /* CategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFDB2CB552C60092DD3F /* CategoryDetailsView.swift */; };
 		4716CFDE2CB552CD0092DD3F /* CategoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFDD2CB552CD0092DD3F /* CategoryDetailsViewModel.swift */; };
 		4716CFE22CB55C890092DD3F /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFE12CB55C890092DD3F /* CustomAlert.swift */; };
+		4716CFE52CB595D40092DD3F /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFE42CB595D40092DD3F /* CircularProgressBar.swift */; };
+		4716CFE92CB59A930092DD3F /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFE82CB59A930092DD3F /* StatisticsView.swift */; };
+		4716CFEB2CB59AEE0092DD3F /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFEA2CB59AEE0092DD3F /* StatisticsViewModel.swift */; };
+		4716CFEE2CB59BCA0092DD3F /* CategoryStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFED2CB59BCA0092DD3F /* CategoryStatisticCell.swift */; };
+		4716CFF12CB59C380092DD3F /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF02CB59C380092DD3F /* LinearProgressBar.swift */; };
+		4716CFF42CB5AF160092DD3F /* StatisticsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF32CB5AF160092DD3F /* StatisticsProgressView.swift */; };
+		4716CFF62CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF52CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift */; };
+		4716CFF92CB5AFA20092DD3F /* StatisticsProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF82CB5AFA20092DD3F /* StatisticsProgressCell.swift */; };
 		472BE3322CB265750021F17E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BE3312CB265750021F17E /* AppDelegate.swift */; };
 		472BE3342CB265750021F17E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BE3332CB265750021F17E /* SceneDelegate.swift */; };
 		472BE33B2CB265760021F17E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472BE33A2CB265760021F17E /* Assets.xcassets */; };
@@ -71,6 +79,14 @@
 		4716CFDB2CB552C60092DD3F /* CategoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsView.swift; sourceTree = "<group>"; };
 		4716CFDD2CB552CD0092DD3F /* CategoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		4716CFE12CB55C890092DD3F /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		4716CFE42CB595D40092DD3F /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		4716CFE82CB59A930092DD3F /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		4716CFEA2CB59AEE0092DD3F /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		4716CFED2CB59BCA0092DD3F /* CategoryStatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStatisticCell.swift; sourceTree = "<group>"; };
+		4716CFF02CB59C380092DD3F /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
+		4716CFF32CB5AF160092DD3F /* StatisticsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsProgressView.swift; sourceTree = "<group>"; };
+		4716CFF52CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsProgressViewModel.swift; sourceTree = "<group>"; };
+		4716CFF82CB5AFA20092DD3F /* StatisticsProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsProgressCell.swift; sourceTree = "<group>"; };
 		472BE32E2CB265750021F17E /* Libarorent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Libarorent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472BE3312CB265750021F17E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472BE3332CB265750021F17E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +192,67 @@
 				4716CFE12CB55C890092DD3F /* CustomAlert.swift */,
 			);
 			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		4716CFE32CB595B80092DD3F /* CircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFE42CB595D40092DD3F /* CircularProgressBar.swift */,
+			);
+			path = CircularProgressBar;
+			sourceTree = "<group>";
+		};
+		4716CFE62CB59A7C0092DD3F /* StatisticsTab */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFE72CB59A8A0092DD3F /* Statistics */,
+				4716CFF22CB5AF080092DD3F /* StatisticsProgress */,
+			);
+			path = StatisticsTab;
+			sourceTree = "<group>";
+		};
+		4716CFE72CB59A8A0092DD3F /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFEC2CB59BAF0092DD3F /* Views */,
+				4716CFE82CB59A930092DD3F /* StatisticsView.swift */,
+				4716CFEA2CB59AEE0092DD3F /* StatisticsViewModel.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		4716CFEC2CB59BAF0092DD3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFED2CB59BCA0092DD3F /* CategoryStatisticCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4716CFEF2CB59C090092DD3F /* LinearProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFF02CB59C380092DD3F /* LinearProgressBar.swift */,
+			);
+			path = LinearProgressBar;
+			sourceTree = "<group>";
+		};
+		4716CFF22CB5AF080092DD3F /* StatisticsProgress */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFF72CB5AF920092DD3F /* Views */,
+				4716CFF32CB5AF160092DD3F /* StatisticsProgressView.swift */,
+				4716CFF52CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift */,
+			);
+			path = StatisticsProgress;
+			sourceTree = "<group>";
+		};
+		4716CFF72CB5AF920092DD3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFF82CB5AFA20092DD3F /* StatisticsProgressCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		472BE3252CB265750021F17E = {
@@ -345,6 +422,8 @@
 		472BE3792CB268600021F17E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4716CFEF2CB59C090092DD3F /* LinearProgressBar */,
+				4716CFE32CB595B80092DD3F /* CircularProgressBar */,
 				4716CFE02CB55C7C0092DD3F /* CustomAlert */,
 				4716CFD52CB53BEB0092DD3F /* NextButton */,
 				472BE3F62CB402370021F17E /* BackButton */,
@@ -458,6 +537,7 @@
 			isa = PBXGroup;
 			children = (
 				472BE3E12CB3E3230021F17E /* HomeTab */,
+				4716CFE62CB59A7C0092DD3F /* StatisticsTab */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -646,8 +726,10 @@
 				472BE3B32CB268600021F17E /* UINavigationController+Additions.swift in Sources */,
 				472BE3A82CB268600021F17E /* NotificationManager.swift in Sources */,
 				4716CFDC2CB552C60092DD3F /* CategoryDetailsView.swift in Sources */,
+				4716CFF92CB5AFA20092DD3F /* StatisticsProgressCell.swift in Sources */,
 				472BE3B72CB268600021F17E /* String+Additions.swift in Sources */,
 				472BE3B52CB268600021F17E /* Date+Additions.swift in Sources */,
+				4716CFE92CB59A930092DD3F /* StatisticsView.swift in Sources */,
 				4716CFE22CB55C890092DD3F /* CustomAlert.swift in Sources */,
 				472BE3AC2CB268600021F17E /* SwiftUIViewWebView.swift in Sources */,
 				472BE3D62CB3C8E20021F17E /* OnboardingViewTabView.swift in Sources */,
@@ -657,6 +739,7 @@
 				472BE3342CB265750021F17E /* SceneDelegate.swift in Sources */,
 				472BE34D2CB268010021F17E /* RootContentView.swift in Sources */,
 				472BE3A92CB268600021F17E /* DefaultsService.swift in Sources */,
+				4716CFF12CB59C380092DD3F /* LinearProgressBar.swift in Sources */,
 				472BE3F52CB401CC0021F17E /* CategoryListViewModel.swift in Sources */,
 				472BE3E92CB3E5A80021F17E /* HomeCategoryCell.swift in Sources */,
 				472BE4002CB409000021F17E /* CreateCategoryViewModel.swift in Sources */,
@@ -664,10 +747,13 @@
 				472BE3F02CB3F4670021F17E /* LikeButton.swift in Sources */,
 				472BE3D92CB3C8E20021F17E /* TabBarViewModel.swift in Sources */,
 				472BE3F82CB402450021F17E /* BackButton.swift in Sources */,
+				4716CFE52CB595D40092DD3F /* CircularProgressBar.swift in Sources */,
+				4716CFF62CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift in Sources */,
 				472BE34F2CB268300021F17E /* RootContentViewModel.swift in Sources */,
 				472BE3FB2CB404F40021F17E /* BluePlusButton.swift in Sources */,
 				472BE3A62CB268600021F17E /* Strings.generated.swift in Sources */,
 				472BE34A2CB267D30021F17E /* RootViewController.swift in Sources */,
+				4716CFEE2CB59BCA0092DD3F /* CategoryStatisticCell.swift in Sources */,
 				4716CFD72CB53BF70092DD3F /* NextButton.swift in Sources */,
 				472BE3EE2CB3EDEC0021F17E /* CategoryModel.swift in Sources */,
 				472BE3FE2CB408F70021F17E /* CreateCategoryView.swift in Sources */,
@@ -680,9 +766,11 @@
 				4716CFDE2CB552CD0092DD3F /* CategoryDetailsViewModel.swift in Sources */,
 				472BE3C92CB2B9110021F17E /* PreloaderViewModel.swift in Sources */,
 				472BE3D42CB3C8E20021F17E /* OnboardingView.swift in Sources */,
+				4716CFEB2CB59AEE0092DD3F /* StatisticsViewModel.swift in Sources */,
 				472BE3B42CB268600021F17E /* Double+Additions.swift in Sources */,
 				472BE3EB2CB3E9810021F17E /* HomeCategoriesView.swift in Sources */,
 				472BE3AE2CB268600021F17E /* InputField.swift in Sources */,
+				4716CFF42CB5AF160092DD3F /* StatisticsProgressView.swift in Sources */,
 				472BE3DE2CB3CA280021F17E /* PrivacyPolicyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

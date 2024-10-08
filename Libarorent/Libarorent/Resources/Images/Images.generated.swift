@@ -36,6 +36,7 @@ internal enum Asset {
   internal static let preloadLock = ImageAsset(name: "preloadLock")
   internal static let preloadStart = ImageAsset(name: "preloadStart")
   internal static let preloaderBg = ImageAsset(name: "preloaderBg")
+  internal static let statisticsBg = ImageAsset(name: "statisticsBg")
   internal static let whiteLogo = ImageAsset(name: "whiteLogo")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

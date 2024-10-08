@@ -17,7 +17,7 @@ struct TabBar: View {
                 .tag(TabBarSelectionView.home.rawValue)
                 .toolbar(.hidden, for: .tabBar)
             
-            Text("Statistics")
+            StatisticsView()
                 .tag(TabBarSelectionView.statistics.rawValue)
             
             Text("Settings")
