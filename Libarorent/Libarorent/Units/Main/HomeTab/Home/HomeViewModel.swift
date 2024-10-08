@@ -16,7 +16,7 @@ extension HomeView {
         
         func getCategories() {
             DispatchQueue.main.async { [weak self] in
-                self?.categories = DefaultsService.categories
+                self?.categories = DefaultsService.categories.filter { $0.isLiked }
             }
         }
     }

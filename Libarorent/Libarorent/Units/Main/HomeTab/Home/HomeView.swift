@@ -45,7 +45,13 @@ struct HomeView: View {
                             }
                             .padding(.horizontal)
                         } else {
-                            
+                            // List
+                            VStack(spacing: 25) {
+                                ForEach(viewModel.categories) { category in
+                                    CategoryCell(item: category)
+                                }
+                            }
+                            .padding(.horizontal)
                         }
                     }
                 }
