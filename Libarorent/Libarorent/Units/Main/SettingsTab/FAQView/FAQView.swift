@@ -16,7 +16,7 @@ struct FAQView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 60) {
-                BackButton(title: "FAQ")
+                BackButton(title: "Często zadawane pytania Libarorent")
                     .padding(.horizontal)
                 
                 ScrollView {
