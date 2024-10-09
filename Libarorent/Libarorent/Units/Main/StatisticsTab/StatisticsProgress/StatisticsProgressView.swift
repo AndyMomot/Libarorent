@@ -27,7 +27,7 @@ struct StatisticsProgressView: View {
                 ScrollView {
                     VStack(spacing: 35) {
                         StatisticsProgressCell(
-                            progressColors: .green, 
+                            progressColors: .green,
                             progress: viewModel.profit
                         )
                         .frame(height: bounds.height * 0.25)
@@ -37,6 +37,26 @@ struct StatisticsProgressView: View {
                             progress: viewModel.costs
                         )
                         .frame(height: bounds.height * 0.25)
+                        
+                        HStack {
+                            Spacer()
+                            
+                            Button {
+                                viewModel.takeScreenshotAndSaveToGallery()
+                            } label: {
+                                Asset.save.swiftUIImage
+                            }
+                            
+                            Spacer()
+                            
+                            Button {
+                                viewModel.takeScreenshotAndShare()
+                            } label: {
+                                Asset.share.swiftUIImage
+                            }
+                            
+                            Spacer()
+                        }
                     }
                     .padding(.horizontal, 32)
                 }
@@ -46,6 +66,18 @@ struct StatisticsProgressView: View {
         .onAppear {
             withAnimation {
                 viewModel.getData()
+            }
+        }
+        .alert(isPresented: $viewModel.showAlert) {
+            Alert(title: Text("Sukces!"),
+                  message: Text("Zrzut ekranu zapisany w Twojej galerii zdjęć"),
+                  dismissButton: .default(Text("OK")))
+        }
+        .sheet(isPresented: $viewModel.isShareSheetPresented, onDismiss: {
+            viewModel.screenshotImage = nil // Clear image after sharing
+        }) {
+            if let screenshotImage = viewModel.screenshotImage {
+                ShareSheet(activityItems: [screenshotImage])
             }
         }
     }

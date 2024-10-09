@@ -25,34 +25,39 @@ struct TabBarCustomView: View {
     }
     
     var body: some View {
-        Rectangle()
-            .foregroundStyle(Colors.darkBlack.swiftUIColor)
-            .cornerRadius(20, corners: [.topLeft, .topRight])
-            .overlay {
-                HStack {
-                    let arrange = (0..<items.count)
-                    ForEach(arrange, id: \.self) { index in
-                        let item = items[index]
-                        let isSelected = index == selectedItem
-                        
-                        Button {
-                            selectedItem = index
-                        } label: {
-                            Image(item.imageName)
-                                .renderingMode(.template)
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundStyle(isSelected ? Colors.liteBlue.swiftUIColor : .white)
-                                .frame(width: 34)
-                        }
+        ZStack {
+            Colors.liteBlack.swiftUIColor
+            
+            Rectangle()
+                .foregroundStyle(Colors.darkBlack.swiftUIColor)
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+                .overlay {
+                    HStack {
+                        let arrange = (0..<items.count)
+                        ForEach(arrange, id: \.self) { index in
+                            let item = items[index]
+                            let isSelected = index == selectedItem
+                            
+                            Button {
+                                selectedItem = index
+                            } label: {
+                                Image(item.imageName)
+                                    .renderingMode(.template)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .foregroundStyle(isSelected ? Colors.liteBlue.swiftUIColor : .white)
+                                    .frame(width: 34)
+                            }
 
-                        if index < arrange.count - 1 {
-                            Spacer()
+                            if index < arrange.count - 1 {
+                                Spacer()
+                            }
                         }
                     }
-                }
-                .padding(.horizontal, bounds.width * 0.1)
+                    .padding(.horizontal, bounds.width * 0.1)
+                    .padding(.bottom)
             }
+        }
     }
 }
 

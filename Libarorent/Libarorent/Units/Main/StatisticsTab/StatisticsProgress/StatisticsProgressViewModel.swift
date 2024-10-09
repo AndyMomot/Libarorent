@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 extension StatisticsProgressView {
     final class ViewModel: ObservableObject {
         @Published var profit: Double = 0
         @Published var costs: Double = 0
+        
+        @Published var showAlert = false
+        @Published var isShareSheetPresented = false
+        @Published var screenshotImage: UIImage? = nil
         
         func getData() {
             DispatchQueue.main.async { [weak self] in
@@ -32,6 +37,37 @@ extension StatisticsProgressView {
                 self.profit = profit
                 self.costs = cost
             }
+        }
+        
+        // Function to take the screenshot
+        func takeScreenshot() -> UIImage? {
+            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            let window = windowScene?.windows.first
+            
+            if let window = window {
+                let renderer = UIGraphicsImageRenderer(bounds: window.bounds)
+                let image = renderer.image { rendererContext in
+                    window.layer.render(in: rendererContext.cgContext)
+                }
+                
+               return image
+            }
+            return nil
+        }
+        
+        // Function to take the screenshot and save it to the gallery
+        func takeScreenshotAndSaveToGallery() {
+            guard let image = takeScreenshot() else { return }
+            
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            showAlert = true // Show an alert on success
+        }
+        
+        // Function to take the screenshot and save it to the gallery
+        func takeScreenshotAndShare() {
+            guard let image = takeScreenshot() else { return }
+            screenshotImage = image
+            isShareSheetPresented = true
         }
     }
 }

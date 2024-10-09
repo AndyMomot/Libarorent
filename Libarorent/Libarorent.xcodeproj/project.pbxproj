@@ -21,6 +21,14 @@
 		4716CFF42CB5AF160092DD3F /* StatisticsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF32CB5AF160092DD3F /* StatisticsProgressView.swift */; };
 		4716CFF62CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF52CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift */; };
 		4716CFF92CB5AFA20092DD3F /* StatisticsProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFF82CB5AFA20092DD3F /* StatisticsProgressCell.swift */; };
+		4716CFFD2CB670650092DD3F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFFC2CB670650092DD3F /* SettingsView.swift */; };
+		4716CFFF2CB6706C0092DD3F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716CFFE2CB6706C0092DD3F /* SettingsViewModel.swift */; };
+		4716D0022CB6729E0092DD3F /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716D0012CB6729E0092DD3F /* SettingsButton.swift */; };
+		4716D0052CB67E930092DD3F /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716D0042CB67E930092DD3F /* FAQView.swift */; };
+		4716D0072CB67E9B0092DD3F /* FAQViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716D0062CB67E9B0092DD3F /* FAQViewModel.swift */; };
+		4716D00A2CB67EE00092DD3F /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716D0092CB67EE00092DD3F /* FAQCell.swift */; };
+		4716D00C2CB681440092DD3F /* FAQModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716D00B2CB681440092DD3F /* FAQModel.swift */; };
+		4716D00F2CB689370092DD3F /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716D00E2CB689370092DD3F /* ShareSheet.swift */; };
 		472BE3322CB265750021F17E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BE3312CB265750021F17E /* AppDelegate.swift */; };
 		472BE3342CB265750021F17E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BE3332CB265750021F17E /* SceneDelegate.swift */; };
 		472BE33B2CB265760021F17E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472BE33A2CB265760021F17E /* Assets.xcassets */; };
@@ -87,6 +95,14 @@
 		4716CFF32CB5AF160092DD3F /* StatisticsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsProgressView.swift; sourceTree = "<group>"; };
 		4716CFF52CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsProgressViewModel.swift; sourceTree = "<group>"; };
 		4716CFF82CB5AFA20092DD3F /* StatisticsProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsProgressCell.swift; sourceTree = "<group>"; };
+		4716CFFC2CB670650092DD3F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4716CFFE2CB6706C0092DD3F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4716D0012CB6729E0092DD3F /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		4716D0042CB67E930092DD3F /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		4716D0062CB67E9B0092DD3F /* FAQViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewModel.swift; sourceTree = "<group>"; };
+		4716D0092CB67EE00092DD3F /* FAQCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
+		4716D00B2CB681440092DD3F /* FAQModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQModel.swift; sourceTree = "<group>"; };
+		4716D00E2CB689370092DD3F /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		472BE32E2CB265750021F17E /* Libarorent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Libarorent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472BE3312CB265750021F17E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472BE3332CB265750021F17E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +271,59 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4716CFFA2CB6703B0092DD3F /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				4716CFFB2CB6704E0092DD3F /* Settings */,
+				4716D0032CB67E850092DD3F /* FAQView */,
+			);
+			path = SettingsTab;
+			sourceTree = "<group>";
+		};
+		4716CFFB2CB6704E0092DD3F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4716D0002CB6728F0092DD3F /* Views */,
+				4716CFFC2CB670650092DD3F /* SettingsView.swift */,
+				4716CFFE2CB6706C0092DD3F /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4716D0002CB6728F0092DD3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4716D0012CB6729E0092DD3F /* SettingsButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4716D0032CB67E850092DD3F /* FAQView */ = {
+			isa = PBXGroup;
+			children = (
+				4716D0082CB67ED30092DD3F /* Views */,
+				4716D0042CB67E930092DD3F /* FAQView.swift */,
+				4716D0062CB67E9B0092DD3F /* FAQViewModel.swift */,
+			);
+			path = FAQView;
+			sourceTree = "<group>";
+		};
+		4716D0082CB67ED30092DD3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4716D0092CB67EE00092DD3F /* FAQCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4716D00D2CB689320092DD3F /* ShareSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4716D00E2CB689370092DD3F /* ShareSheet.swift */,
+			);
+			path = ShareSheet;
+			sourceTree = "<group>";
+		};
 		472BE3252CB265750021F17E = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +474,7 @@
 		472BE3762CB268600021F17E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4716D00D2CB689320092DD3F /* ShareSheet */,
 				472BE3772CB268600021F17E /* ImagePicker */,
 				472BE3792CB268600021F17E /* Views */,
 			);
@@ -538,6 +608,7 @@
 			children = (
 				472BE3E12CB3E3230021F17E /* HomeTab */,
 				4716CFE62CB59A7C0092DD3F /* StatisticsTab */,
+				4716CFFA2CB6703B0092DD3F /* SettingsTab */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -577,6 +648,7 @@
 			isa = PBXGroup;
 			children = (
 				472BE3ED2CB3EDEC0021F17E /* CategoryModel.swift */,
+				4716D00B2CB681440092DD3F /* FAQModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -718,6 +790,7 @@
 				472BE3D72CB3C8E20021F17E /* TabBar.swift in Sources */,
 				472BE3E62CB3E34B0021F17E /* HomeViewModel.swift in Sources */,
 				472BE3D52CB3C8E20021F17E /* OnboardingViewModel.swift in Sources */,
+				4716CFFF2CB6706C0092DD3F /* SettingsViewModel.swift in Sources */,
 				472BE3AB2CB268600021F17E /* ImagePicker.swift in Sources */,
 				472BE3D82CB3C8E20021F17E /* TabBarCustomView.swift in Sources */,
 				472BE3912CB268600021F17E /* Colors.generated.swift in Sources */,
@@ -729,6 +802,7 @@
 				4716CFF92CB5AFA20092DD3F /* StatisticsProgressCell.swift in Sources */,
 				472BE3B72CB268600021F17E /* String+Additions.swift in Sources */,
 				472BE3B52CB268600021F17E /* Date+Additions.swift in Sources */,
+				4716D0072CB67E9B0092DD3F /* FAQViewModel.swift in Sources */,
 				4716CFE92CB59A930092DD3F /* StatisticsView.swift in Sources */,
 				4716CFE22CB55C890092DD3F /* CustomAlert.swift in Sources */,
 				472BE3AC2CB268600021F17E /* SwiftUIViewWebView.swift in Sources */,
@@ -741,8 +815,10 @@
 				472BE3A92CB268600021F17E /* DefaultsService.swift in Sources */,
 				4716CFF12CB59C380092DD3F /* LinearProgressBar.swift in Sources */,
 				472BE3F52CB401CC0021F17E /* CategoryListViewModel.swift in Sources */,
+				4716D00A2CB67EE00092DD3F /* FAQCell.swift in Sources */,
 				472BE3E92CB3E5A80021F17E /* HomeCategoryCell.swift in Sources */,
 				472BE4002CB409000021F17E /* CreateCategoryViewModel.swift in Sources */,
+				4716D00F2CB689370092DD3F /* ShareSheet.swift in Sources */,
 				4716CFD92CB543230092DD3F /* CategoryCell.swift in Sources */,
 				472BE3F02CB3F4670021F17E /* LikeButton.swift in Sources */,
 				472BE3D92CB3C8E20021F17E /* TabBarViewModel.swift in Sources */,
@@ -750,6 +826,7 @@
 				4716CFE52CB595D40092DD3F /* CircularProgressBar.swift in Sources */,
 				4716CFF62CB5AF1C0092DD3F /* StatisticsProgressViewModel.swift in Sources */,
 				472BE34F2CB268300021F17E /* RootContentViewModel.swift in Sources */,
+				4716D0052CB67E930092DD3F /* FAQView.swift in Sources */,
 				472BE3FB2CB404F40021F17E /* BluePlusButton.swift in Sources */,
 				472BE3A62CB268600021F17E /* Strings.generated.swift in Sources */,
 				472BE34A2CB267D30021F17E /* RootViewController.swift in Sources */,
@@ -761,10 +838,13 @@
 				472BE3B62CB268600021F17E /* View+Additions.swift in Sources */,
 				4716CFD42CB5372B0092DD3F /* StepperView.swift in Sources */,
 				472BE3AA2CB268600021F17E /* FileManagerService.swift in Sources */,
+				4716D00C2CB681440092DD3F /* FAQModel.swift in Sources */,
 				472BE3F32CB401C30021F17E /* CategoryListView.swift in Sources */,
+				4716CFFD2CB670650092DD3F /* SettingsView.swift in Sources */,
 				472BE3DF2CB3CA280021F17E /* PrivacyPolicyView.swift in Sources */,
 				4716CFDE2CB552CD0092DD3F /* CategoryDetailsViewModel.swift in Sources */,
 				472BE3C92CB2B9110021F17E /* PreloaderViewModel.swift in Sources */,
+				4716D0022CB6729E0092DD3F /* SettingsButton.swift in Sources */,
 				472BE3D42CB3C8E20021F17E /* OnboardingView.swift in Sources */,
 				4716CFEB2CB59AEE0092DD3F /* StatisticsViewModel.swift in Sources */,
 				472BE3B42CB268600021F17E /* Double+Additions.swift in Sources */,
@@ -918,6 +998,7 @@
 				DEVELOPMENT_TEAM = QTR5336WJC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Libarorent/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to save your screenshot to the gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -949,6 +1030,7 @@
 				DEVELOPMENT_TEAM = QTR5336WJC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Libarorent/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to save your screenshot to the gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

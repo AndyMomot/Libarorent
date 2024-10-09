@@ -11,6 +11,10 @@ struct TabBar: View {
     @StateObject private var viewModel = TabBarViewModel()
     @State private var showTabBar = true
     
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
         TabView(selection: $viewModel.selection) {
             HomeView(showTabBar: $showTabBar)
@@ -20,7 +24,7 @@ struct TabBar: View {
             StatisticsView()
                 .tag(TabBarSelectionView.statistics.rawValue)
             
-            Text("Settings")
+            SettingsView()
                 .tag(TabBarSelectionView.settings.rawValue)
         }
         .edgesIgnoringSafeArea(.bottom)
@@ -29,7 +33,7 @@ struct TabBar: View {
                 VStack {
                     Spacer()
                     TabBarCustomView(selectedItem: $viewModel.selection)
-                        .frame(height: UIScreen.main.bounds.height * 0.135)
+                        .frame(height: UIScreen.main.bounds.height * 0.1)
                 }
                 .ignoresSafeArea(edges: .bottom)
             }

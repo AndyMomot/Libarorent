@@ -26,6 +26,9 @@ internal enum Asset {
   internal static let computer = ImageAsset(name: "computer")
   internal static let other = ImageAsset(name: "other")
   internal static let phone = ImageAsset(name: "phone")
+  internal static let info = ImageAsset(name: "info")
+  internal static let support = ImageAsset(name: "support")
+  internal static let update = ImageAsset(name: "update")
   internal static let homeTab = ImageAsset(name: "homeTab")
   internal static let settingsTab = ImageAsset(name: "settingsTab")
   internal static let statisticsTab = ImageAsset(name: "statisticsTab")
@@ -36,6 +39,8 @@ internal enum Asset {
   internal static let preloadLock = ImageAsset(name: "preloadLock")
   internal static let preloadStart = ImageAsset(name: "preloadStart")
   internal static let preloaderBg = ImageAsset(name: "preloaderBg")
+  internal static let save = ImageAsset(name: "save")
+  internal static let share = ImageAsset(name: "share")
   internal static let statisticsBg = ImageAsset(name: "statisticsBg")
   internal static let whiteLogo = ImageAsset(name: "whiteLogo")
 }
