@@ -48,7 +48,13 @@ struct HomeView: View {
                             // List
                             VStack(spacing: 25) {
                                 ForEach(viewModel.categories) { category in
-                                    CategoryCell(item: category)
+                                    Button {
+                                        viewModel.categoryModelToShow = category
+                                        viewModel.showCategoryDetails.toggle()
+                                    } label: {
+                                        CategoryCell(item: category)
+                                    }
+
                                 }
                             }
                             .padding(.horizontal)
@@ -67,6 +73,16 @@ struct HomeView: View {
             .navigationDestination(isPresented: $viewModel.showCategories) {
                 if let category = viewModel.categoryToShow {
                     CategoryListView(category: category)
+                }
+            }
+            .navigationDestination(isPresented: $viewModel.showCategoryDetails) {
+                if let categoryToShow = viewModel.categoryModelToShow {
+                    CategoryDetailsView(item: categoryToShow) {
+                        withAnimation {
+                            showTabBar = true
+                            viewModel.getCategories()
+                        }
+                    }
                 }
             }
         }

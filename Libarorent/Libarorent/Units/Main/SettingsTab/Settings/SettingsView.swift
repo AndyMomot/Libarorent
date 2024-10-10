@@ -32,8 +32,8 @@ struct SettingsView: View {
                     
                     ScrollView {
                         VStack(spacing: 27) {
-                            SettingsButton(imageName: Asset.update.name, title: "Dźwięk") {
-                                viewModel.showSupport.toggle()
+                            SettingsButton(imageName: Asset.update.name, title: "Aktualizacja") {
+                                onUpdateApp()
                             }
                             .frame(height: 44)
                             
@@ -43,7 +43,7 @@ struct SettingsView: View {
                             .frame(height: 44)
                             
                             SettingsButton(imageName: Asset.support.name, title: "Wsparcie") {
-                                onUpdateApp()
+                                viewModel.showSupport.toggle()
                             }
                             .frame(height: 44)
                         }

@@ -14,6 +14,9 @@ extension HomeView {
         
         lazy var categoryToShow: CategoryModel.Category? = nil
         
+        @Published var showCategoryDetails = false
+        var categoryModelToShow: CategoryModel?
+        
         func getCategories() {
             DispatchQueue.main.async { [weak self] in
                 self?.categories = DefaultsService.categories.filter { $0.isLiked }
